@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- 包扫描器，扫描控制器 -->
+	<context:component-scan base-package="com.tsunami.egou.controller" />
+	<mvc:annotation-driven />
+
+	<!-- 配置视图解析器 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<mvc:interceptors>
+		<!-- 声明拦截器 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/buyer/**" />
+			<!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->
+			<bean class="com.tsunami.egou.interceptors.LoginInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	
+	<!-- 配置json转换器-->
+    <bean id="mappingJacksonHttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+    <!-- 让spring mvc中的注解(@ResponseBody)能够使用上json转换器-->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="mappingJacksonHttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+    <!-- rest json related... end -->
+	
+	
+	<!-- 资源映射 -->
+	<mvc:resources location="/WEB-INF/res/css/" mapping="/res/css/**" />
+	<mvc:resources location="/WEB-INF/res/js/" mapping="/res/js/**" />
+	<mvc:resources location="/WEB-INF/res/img/" mapping="/res/img/**" />
+	<mvc:resources location="/WEB-INF/res/common/" mapping="/res/common/**" />
+	<mvc:resources location="/WEB-INF/res/togogo/" mapping="/res/togogo/**" />
+</beans>
