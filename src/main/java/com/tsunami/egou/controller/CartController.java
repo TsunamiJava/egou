@@ -54,7 +54,6 @@ public class CartController {
 		item.setSku(sku);
 		EProduct product = new EProduct();
 		product.setId(productId);
-
 		product.setName(productName);
 		item.setProduct(product);
 		EImg img = new EImg();

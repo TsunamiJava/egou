@@ -164,7 +164,7 @@ function sizeToRed(target,id){
 //加入购物车
 function addCart(skuId,skuPrice,deliveFee,productId,productName,imgUrl,skuUpperLimit){
 	//alert("添加购物车成功!");
-	window.location.href = "/cart/addProductToCart?skuId="+skuId+"&skuPrice="+skuPrice+"&deliveFee="+deliveFee+"&productId="+productId+"&productName="+productName+"&imgUrl="+imgUrl+"&amount="+$("#num").val()+"&skuUpperLimit="+skuUpperLimit;
+	window.location.href = "/cart/addProductToCart?skuId="+skuId+"&skuPrice="+skuPrice+"&deliveFee="+deliveFee+"&productId="+productId+"&productName="+encodeURI(productName)+"&imgUrl="+imgUrl+"&amount="+$("#num").val()+"&skuUpperLimit="+skuUpperLimit;
 	//window.location.href = "/cart/addProductToCart/"+skuId+"/"+skuPrice+"/"+deliveFee+"/"+productId+"/'"+productName+"'/'"+imgUrl+"'/"+$("#num").val();
 }
 //立即购买
