@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/front_page/common
+END
+taglibs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/front_page/common/taglibs.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/egou_repository/!svn/ver/7/egou/src/main/webapp/WEB-INF/front_page/common/header.jsp
+END
+res.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/front_page/common/res.jsp
+END
+product_left.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/front_page/common/product_left.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/front_page/common/footer.jsp
+END
+buyer_left.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/front_page/common/buyer_left.jsp
+END
+cart_header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/egou_repository/!svn/ver/3/egou/src/main/webapp/WEB-INF/front_page/common/cart_header.jsp
+END

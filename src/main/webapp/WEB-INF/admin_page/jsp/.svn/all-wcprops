@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp
+END
+content-category.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/content-category.jsp
+END
+product-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/egou_repository/!svn/ver/9/egou/src/main/webapp/WEB-INF/admin_page/jsp/product-list.jsp
+END
+content-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/content-edit.jsp
+END
+item.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/item.jsp
+END
+brand-list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/brand-list.jsp
+END
+content-add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/content-add.jsp
+END
+file-upload.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/file-upload.jsp
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/favicon.ico
+END
+product-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/egou_repository/!svn/ver/9/egou/src/main/webapp/WEB-INF/admin_page/jsp/product-edit.jsp
+END
+product-add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/egou_repository/!svn/ver/9/egou/src/main/webapp/WEB-INF/admin_page/jsp/product-add.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/egou_repository/!svn/ver/9/egou/src/main/webapp/WEB-INF/admin_page/jsp/index.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/login.jsp
+END
+brand-edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/brand-edit.jsp
+END
+content.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/content.jsp
+END
+brand-add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/egou_repository/!svn/ver/2/egou/src/main/webapp/WEB-INF/admin_page/jsp/brand-add.jsp
+END
