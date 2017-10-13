@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.tsunami.egou.pojo.EImg;
 import com.tsunami.egou.pojo.EProduct;
+import com.tsunami.egou.pojo.ESku;
 
 /**
  * 
@@ -15,7 +16,14 @@ public class ProductImgItem {
 	private EProduct product;
 	private List<EImg> imgs = new ArrayList<EImg>();
 	private EImg mainImg;
+	private ESku sku;
 	
+	public ESku getSku() {
+		return sku;
+	}
+	public void setSku(ESku sku) {
+		this.sku = sku;
+	}
 	public EProduct getProduct() {
 		return product;
 	}

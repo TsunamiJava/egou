@@ -46,18 +46,22 @@ public class CartController {
 
 		// 创建购物项
 		BuyItem item = new BuyItem();
+		
 		ESku sku = new ESku();
 		sku.setId(skuId);
 		sku.setSkuPrice(skuPrice);
 		sku.setDeliveFee(deliveFee);
 		sku.setSkuUpperLimit(skuUpperLimit);
-		item.setSku(sku);
+
 		EProduct product = new EProduct();
 		product.setId(productId);
 		product.setName(productName);
-		item.setProduct(product);
+		
 		EImg img = new EImg();
 		img.setUrl(imgUrl);
+		
+		item.setSku(sku);
+		item.setProduct(product);
 		item.setImg(img);
 		item.setAmount(amount);
 		// 将购物项加到购物车中
@@ -83,7 +87,7 @@ public class CartController {
 	}
 
 	/**
-	 * 清空购物车
+	 * 删除商品
 	 * 
 	 * @return
 	 */

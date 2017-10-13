@@ -6,6 +6,35 @@
 <title>我的购物车</title>
 <%@include file="../common/res.jsp" %>
 <script type="text/javascript">
+$(function(){
+	//初始化点击第一个颜色
+	$("#colors a:first").trigger("click");
+	//给A标签绑定事件   -
+	$("#sub").click(function(){
+		//件数  1
+		var num = $("#num").val();
+		num--;
+		if(num == 0){
+			//alert();
+			return;
+		}
+		//赋值
+		$("#num").val(num);
+	});
+	//+
+	$("#add").click(function(){
+		//件数  8
+		var num = $("#num").val();
+		num++;
+		//num 9      9
+		if(num > buyLimit){
+			alert("此商品只能买" + buyLimit + "件");
+			return;
+		}
+		//赋值
+		$("#num").val(num);
+	});
+});
 //结算
 function closeBuy(){
  	window.location.href = "/buyer/closeBuy";
@@ -58,7 +87,16 @@ function clearCart(){
 						</ul>
 					</td>
 					<td>￥${item.sku.skuPrice }</td>
-					<td><a onclick="subProductAmount(492,9)" class="inb arr" title="减" href="javascript:void(0);">-</a><input type="text" id="num492" readonly="readonly" value="${item.amount }" name="" size="1" class="txts"><a onclick="addProductAmount(492,9)" class="inb arr" title="加" href="javascript:void(0);">+</a></td>
+					<td>
+					<!-- 
+					<a onclick="subProductAmount(492,9)" class="inb arr" title="减" href="javascript:void(0);">-</a>
+					<input type="text" id="num492" readonly="readonly" value="${item.amount }" name="" size="1" class="txts">
+					<a onclick="addProductAmount(492,9)" class="inb arr" title="加" href="javascript:void(0);">+</a>
+					 -->
+					<a id="sub" class="inb arr"  title="减" href="javascript:void(0);" >-</a>
+					<input id="num" type="text" value="${item.amount }" name="" size="1" readonly="readonly">
+					<a id="add" class="inb arr"  title="加" href="javascript:void(0);">+</a>
+					</td>
 					<td class="blue"><a title="删除" href="/cart/deleteItem?skuId=${item.sku.id }">删除</a></td>
 				</tr>
 				</c:forEach>

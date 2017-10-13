@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.github.pagehelper.PageInfo;
 import com.tsunami.egou.pojo.EProduct;
+import com.tsunami.egou.pojo.ESku;
 
 /**
  * 封装分页商品信息
@@ -14,6 +15,7 @@ public class Pagination {
 
 	private List<ProductImgItem> items;
 	private PageInfo<EProduct> pageInfo;
+	
 	public List<ProductImgItem> getItems() {
 		return items;
 	}

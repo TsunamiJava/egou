@@ -166,7 +166,7 @@
 							</dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">${item.product.name }
-							<dd class="orange">￥148.00</dd>
+							<dd class="orange">￥${item.sku.skuPrice }</dd>
 							<dd>北京有货</dd>
 							<dd>
 								<a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a>

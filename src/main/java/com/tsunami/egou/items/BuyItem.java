@@ -19,6 +19,7 @@ public class BuyItem {
 	private EImg img;
 	//购物项购买的产品数量
 	private int amount =1;
+	
 	public ESku getSku() {
 		return sku;
 	}

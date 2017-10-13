@@ -76,7 +76,7 @@ public class BuyCart {
 	}
 	//应付金额
 	public Double getTotalPrice(){
-		return getFee() + getProductPrice();
+		return getFee() + getProductPrice()*getProductAmount();
 	}
 
 	public List<BuyItem> getItems() {
